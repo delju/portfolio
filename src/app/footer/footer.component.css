@@ -25,7 +25,8 @@ footer {
   height: 155px;
   position: relative;
   bottom:0;
-  background-image: url(/assets/img/footer.png);
+  background-image: url(assets/img/footer.png);
+  background-size: cover;
   background-repeat: no-repeat;
   margin-top: 55px;
 }

@@ -26,7 +26,7 @@ h1 {
 
 /*Background de la page index avec image, qui couvre toute la page sans répétition*/
 .index {
-    background-image: url(/assets/img/menu.jpg);
+    background-image: url(assets/img/menu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 650px;
