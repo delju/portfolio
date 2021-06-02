@@ -1,0 +1,222 @@
+/**************************************/
+/************** GENERAL****************/
+/**************************************/
+
+/*Supprime les margin et padding des éléments cités */
+body{
+  height: 100%;
+}
+nav,
+ul,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/*Class content de 950px de large et centré avec le margin auto*/
+.content {
+    width: 950px;
+    margin: 0 auto;
+}
+
+/*Class pour augmenter la hauteur du div des pages service et production afin de ne pas avoir le footer en milieu de page car pas assez de contenu */
+.size {
+    block-size: 350px;
+}
+
+/*Background de la page index avec image, qui couvre toute la page sans répétition*/
+.index {
+    background-image: url(/assets/img/menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+/*Pour les liens en général pas de décoration et couleur mauve*/
+a {
+    text-decoration: none;
+    color: #743F83;
+}
+
+/*Supprime le float*/
+.clear {
+    clear: both;
+}
+
+/**************************************/
+/************** HEADER ****************/
+/**************************************/
+
+/*INDEX*/
+/*Permet de mettre le header sur la page complète*/
+#header {
+    width: 100%;
+    height: 100%;
+}
+
+/*Logo qui est plus grand sur le body de class index*/
+.index .logo {
+    font-size: 45px;
+    position: relative;
+    top: 150px;
+
+}
+
+/*Navigation unique sur la page index*/
+.index nav ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.index nav ul li {
+    display: inline;
+    padding: 0 38px;
+}
+
+/*Ombre qui entoure les liens de l'index*/
+.shadowLink {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(170, 163, 163, 0.9);
+}
+
+/**************************************/
+/********* ANIMATION SURVOLE **********/
+/**************************************/
+
+/* Container*/
+
+/*Liens de la navigation de la page index*/
+
+/*Lien 1 en border-radius 50% pour avoir un cercle parfait, avec un border de 3px solid couleur bleu afin de faire ressortir le cercle et le fonde de la même couleur mais avec une transparence à 25%*/
+
+.link1 {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #05CDE7;
+  background-color: rgba(5, 205, 231, 0.25);
+}
+/*Lien 2 en border-radius 50% pour avoir un cercle parfait, avec un border de 3px solid couleur bleu clair afin de faire ressortir le cercle et le fonde de la même couleur mais avec une transparence à 25%*/
+
+.link2 {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #D4F2FD;
+  background-color: rgba(212, 242, 253, 0.25);
+}
+
+/*Lien 3 en border-radius 50% pour avoir un cercle parfait, avec un border de 3px solid couleur rose clair afin de faire ressortir le cercle et le fonde de la même couleur mais avec une transparence à 25%*/
+.link3 {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #FDCFF8;
+  background-color: rgba(253, 207, 248, 0.25);
+}
+/*Lien 4 en border-radius 50% pour avoir un cercle parfait, avec un border de 3px solid couleur rose afin de faire ressortir le cercle et le fonde de la même couleur mais avec une transparence à 25%*/
+
+.link4 {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #EE4A6C;
+  background-color: rgba(238, 74, 108, 0.25);
+}
+/*Animation*/
+
+/* Home*/
+
+/*Lien 1 Qui suis-je?, changement de couleur de fond en bleu sans transparence et changement de texte en bleu clair pour plus de visibilité*/
+.link1:hover {
+  background-color: #05CDE7;
+}
+
+.link1:hover .textLink1 {
+  color: #D4F2FD;
+}
+
+/*Lien 2 Services, changement de couleur de fond en bleu clair sans transparence.*/
+.link2:hover {
+  background-color: #D4F2FD;
+}
+
+/*Lien 3 Réalisation, changement de couleur de fond en rose clair sans transparence.*/
+.link3:hover {
+  background-color: #FDCFF8;
+}
+
+/*Lien 4 Contact, changement de couleur de fond en rose  sans transparence et changement de texte en rose clair pour plus de visibilité */
+.link4:hover {
+  background-color: #EE4A6C;
+}
+
+.link4:hover .textLink4 {
+  color: #FDCFF8;
+}
+/********Texte Animation**********/
+/*Texte des liens correspondants, il y a 4 class différentes, car les couleurs et les positions sont différentes pour chacune d'entre elles afin que tous les liens soient bien centré*/
+.textLink1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  text-align: center;
+  color: #05CDE7;
+}
+
+.textLink2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  text-align: center;
+  color: #05CDE7;
+}
+
+.textLink3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  text-align: center;
+  color: #EE4A6C;
+}
+
+.textLink4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  text-align: center;
+  color: #EE4A6C;
+}
+
+.logo {
+  font-family: 'Merienda', cursive;
+  font-size: 35px;
+  color: #743F83;
+  letter-spacing: -0.03em;
+  text-align: center;
+  padding: 20px 0;
+}

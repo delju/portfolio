@@ -1,0 +1,125 @@
+/**************************************/
+/************** GENERAL****************/
+/**************************************/
+
+/*Class content de 950px de large et centré avec le margin auto*/
+.content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/*Class pour augmenter la hauteur du div des pages service et production afin de ne pas avoir le footer en milieu de page car pas assez de contenu */
+.size {
+  height: 400px;
+}
+
+/*Pour les liens en général pas de décoration et couleur mauve*/
+a {
+  text-decoration: none;
+  color: #743F83;
+}
+
+/*Supprime le float*/
+.clear {
+  clear: both;
+}
+
+/**************************************/
+/************** TITRES ****************/
+/**************************************/
+
+/*Tout les titres niveau 2 sont en merienda 30px avec un letter-spacing pour l'estétique*/
+h2 {
+  font-family: 'Merienda', cursive;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+}
+/*Tous les titres niveau 3 sont en merienda 20px sans margin du haut*/
+h3 {
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+
+}
+
+
+/**************************************/
+/********* ANIMATION SURVOLE **********/
+/**************************************/
+/*Container des div de la page service avec des coins arrondis*/
+
+.containerService {
+  position: relative;
+  border-radius: 12px;
+}
+/*Image*/
+
+/*Class poru l'animation de la page service*/
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+/*Service*/
+/*Animation des div page service avec border-radius 12px pour correspondre au container*/
+.overlayService {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 12px;
+  background-color: #05CDE7;
+}
+
+/*Au survol du container, affichage de l'animation*/
+.containerService:hover .overlayService {
+  bottom: 0;
+  height: 100%;
+}
+
+
+/*Texte de la page service qui s'affiche à l'animation.*/
+.textService {
+  font-family: 'Josefin Sans', sans-serif;
+  white-space: initial;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/**************************************/
+/************** COLONNES **************/
+/**************************************/
+
+/* Class pour que les colonnes se 'float' à gauche, et un margin right pour les goutieres en 20px*/
+.col {
+  float: left;
+  margin-right: 20px;
+}
+
+.col-3-12 {
+  /*Colonnes Services*/
+  width: 222.5px;
+}
+
+.height-200{
+  height: 200px;
+  }
+
+  .last {
+    margin-right: 0 ! important;
+}

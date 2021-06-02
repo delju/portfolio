@@ -1,0 +1,83 @@
+<app-nav></app-nav>
+
+<section class="content">
+  <!--Titre h2 de la page contact-->
+  <h2>Contact</h2>
+  <!-- 2 colonnes 6/12 avec float pour le serrer sur une ligne
+ 1/2: iframe de google maps avec l'emplacement de mon adresse-->
+  <div class="col col-6-12 height-400"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5572546043513!2d5.417535815082547!3d50.4493469794752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c053c0200c254b%3A0x93c7115a6d37d62e!2sGrand&#39;Route%2060%2C%204590%20Ouffet!5e0!3m2!1sfr!2sbe!4v1615816934797!5m2!1sfr!2sbe" width="465" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+  <!--  2/2: Texte avec mes coordonées et ancrage vers le formulaire de contact
+  Div avec Texte du lien, j'utilise une div car les margin d'un p peut différencier en fonction des navigateurs et ici, je ne veux pas de ça-->
+  <div class="col col-6-12 height-400 contact last">
+    <!-- Ancre sur le texte formulaire de contact. Ancre réalisé avec ngx page scroll. href #+id et pageScroll dans la lien -->
+      <div>Une question? Vous pouvez me contacter via <br><a pageScroll href="#contactForm">le formulaire de contact</a> ou via ces coordonnées:</div>
+      <!--  Icone et donnée maison avec br pour descendre à la ligne-->
+      <img src="assets/img/icon-house.png" alt="">
+      <div>Delvaux Julène <br>
+          Grand’route 60A <br>
+          4590 Warzée <br> </div>
+      <!--Icone et donnée mobile-->
+      <img src="assets/img/icon-mobile.png" alt="">
+      <div>0471818099 </div>
+      <!--Icone et donnée mail, avec un lien vers mon e-mail-->
+      <img src="assets/img/icon-mail-50.png" alt="">
+      <div>
+          <a href="mailto:julene.delvaux@gmail.com">julene.delvaux@gmail.com</a> <br>
+      </div>
+
+
+  </div>
+  <!--Fin du flottement-->
+  <div class="clear"></div>
+
+
+  <!--Début du formulaire de contact, avec bordure et fond coloré-->
+  <form method="POST"  class="formContact" [formGroup]="messageForm" (ngSubmit) ="createMessage()" >
+      <!--Titre h3 du formulaire-->
+      <h3 id="contactForm">Formulaire de contact</h3>
+<!-- Paragraphe signalant les champs obligatoires -->
+      <p>* Ces champs sont obligatoires</p>
+      <!-- Partie nom du formulaire-->
+      <div>
+          <label for="name">Nom:*</label>
+          <input type="text" id="name" name="name" formControlName="name">
+      </div>
+
+      <!-- Partie prénom du formulaire-->
+      <div>
+          <label for="firstname">Prénom:</label>
+          <input type="text" id="firstname" name="firstname"  formControlName="firstname">
+      </div>
+      <!-- Partie mail du formulaire-->
+      <div>
+          <label for="mail">E-mail:*</label>
+          <input type="email" id="mail" name="mail" formControlName="mail">
+      </div>
+      <!-- Partie mobile du formulaire-->
+      <div>
+          <label for="mobile">N° de téléphone:</label>
+          <input type="tel" id="mobile" name="mobile"  formControlName="mobile">
+      </div>
+      <!-- Partie message du formulaire-->
+      <div>
+          <label for="message">Votre message:*</label>
+          <textarea name="message" id="message" cols="30" rows="10" formControlName="message"></textarea>
+      </div>
+      <!-- Partie bouton d'envoie du formulaire mis dans une div pour avoir la propriété de la div -->
+      <div class="button">
+          <button type="submit" class=" formButton" [disabled]="messageForm.invalid">Envoyer</button>
+      </div>
+        <!-- Div qui affiche les messages quand le formulaire est envoyé -->
+      <div class="success-message"  *ngIf="successMessage">
+          <p class="alert alert-success">
+              Votre message a été envoyé avec succes!
+
+          </p>
+        </div>
+        <!-- Fin du formulaire-->
+  </form>
+  <!--Fin section-->
+</section>
+
+<app-footer></app-footer>

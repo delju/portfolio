@@ -1,0 +1,48 @@
+/**************************************/
+/************** GENERAL****************/
+/**************************************/
+
+
+/*Class content de 950px de large et centré avec le margin auto*/
+.content {
+    width: 950px;
+    margin: 0 auto;
+}
+
+/*Pour les liens en général pas de décoration et couleur mauve*/
+a {
+  text-decoration: none;
+  color: #743F83;
+}
+
+/**************************************/
+/************** FOOTER ****************/
+/**************************************/
+
+/*Footer en full width, 150px de hauteur, position relative à son parent et bottom 0 pour placer en bas. Fond en image non répétée et margin top 55px pour l'expacé du contenu, comme la header.*/
+footer {
+  width: 100%;
+  height: 155px;
+  position: relative;
+  bottom:0;
+  background-image: url(/assets/img/footer.png);
+  background-repeat: no-repeat;
+  margin-top: 55px;
+}
+
+/*Les liens du footer sont placés centré dans le footer avec un espace entre eux de 4Opx grâce au padding*/
+
+footer a {
+  padding: 0 20px;
+  position: relative;
+  top: 20px;
+  left: 245px;
+}
+
+/*Texte du footer centré en Josefin Sans 18px et margin top de 35px pour l'espacé des images*/
+footer p {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  margin-top: 35px;
+}

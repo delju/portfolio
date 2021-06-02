@@ -1,0 +1,32 @@
+<app-nav></app-nav>
+
+<!--Section class content de 950px de largeur-->
+<section class="content size">
+
+
+  <!--Titre h2 de la page mes services-->
+  <h2>Mes services</h2>
+  <!-- 4 colonnes avec images et animation de textes déroulants vers le bas sur les services que je propose. Float sur les div pour les serrer sur une ligne -->
+  <!-- Création site web statique -->
+  <!-- Il y a une boucle. Pour chaque élément de ser. On affiche une colonne avec une image et une animation avec texte
+  Seul, le 4e élément prendra la class last -->
+  <div *ngFor = "let service of ser;let i = index" [ngClass]= "{'col':true, 'col-3-12':true, 'height-200':true, 'last': (i+1)%4 == 0}" >
+      <!-- Container, contient l'image, l'animation et le texte-->
+      <div class="containerService">
+          <!-- Image a pour lien le 'urlImage' du service associé-->
+          <img src={{service.urlImage}} alt="" class="image">
+          <!-- Animation -->
+          <div class="overlayService ">
+              <!--  Texte de l'animation a pour texte la 'description' du service associé-->
+              <div class="textService">{{service.description}}</div>
+          </div>
+      </div>
+  </div>
+
+  <!--Fin du flottement-->
+  <div class="clear"></div>
+
+  <!--Fin de section-->
+</section>
+
+<app-footer></app-footer>

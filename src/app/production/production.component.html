@@ -1,0 +1,27 @@
+<app-nav></app-nav>
+
+ <!-- Section contenent, pour avoir le contenu sur une largeur de 950px et centré et size -->
+ <section class="content size">
+
+  <!-- Titre h2 de la page -->
+  <h2>Mes réalisations</h2>
+  <!--5 colonnes liens vers une image sur un nouvelle fenêtre des différentes réalisations et texte explicatif et changement de couleur de fond lors du survol -->
+
+  <!--  Réalisation colonne-->
+<!-- Pour chaque rea de realisation, on affiche un lien qui est une colonne avec texte. Le lien comprend le lien 'pdfLink' associé -->
+  <a *ngFor = "let rea of realisation;let i=index"  href={{rea.pdfLink}} target="_blank">
+<!--Div contenant le texte qui servira de bouton lien.
+Le 5e élément, qui est le dernier prend la class last-->
+      <div [ngClass]="{'col':true, 'col-2-12':true, 'height-150':true, 'last': (i+1)%5 == 0}">
+<!-- Texte contenu dans la div, expliquant les réalisations. C'est l'élément 'description associé'-->
+          <p>{{rea.descprition}}</p>
+      </div>
+  </a>
+
+  <!--Fin du flottement-->
+  <div class="clear"></div>
+
+  <!--Fin de section-->
+</section>
+
+<app-footer></app-footer>

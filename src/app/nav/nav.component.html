@@ -1,0 +1,21 @@
+ <!--   Header avec class all pour toutes les pages avec image en fond. -->
+ <header class="all">
+  <!-- Div class content 950px de large et centré -->
+  <div class="content">
+      <!-- Titre logo avec lien vers la page index -->
+      <h1 class="logo"><a routerLink="" routerLinkActive="active">Julène Delvaux</a></h1>
+      <!--Navigation niveau 1 avec 4 liens: Qui suis-je?, Services, Réalisations, Contact
+Survol et current de couleur rose-->
+
+ <nav>
+  <!-- Ouverture de la liste sans ordre pour la navigation-->
+   <ul>
+      <!-- Li pour chaque élément de page. Avec le chemin 'nameRoute' associé et du nom 'name' associé   -->
+      <li *ngFor= "let pages of page"><a routerLink={{pages.nameRoute}} routerLinkActive="active">{{pages.name}}</a></li>
+   <!--Fermeture de la liste-->
+   </ul>
+   <!--  Fermeture de la navigation-->
+</nav>
+</div>
+<!-- Fermeture du header-->
+</header>

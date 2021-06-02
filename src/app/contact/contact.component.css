@@ -1,0 +1,147 @@
+
+
+
+/*Class content de 950px de large et centré avec le margin auto*/
+.content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+
+/*Pour les liens en général pas de décoration et couleur mauve*/
+a {
+  text-decoration: none;
+  color: #743F83;
+}
+
+/*Supprime le float*/
+.clear {
+  clear: both;
+}
+
+/**************************************/
+/************** TITRES ****************/
+/**************************************/
+h2 {
+  font-family: 'Merienda', cursive;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+
+}
+
+/*Class du contenu de la page contact
+Police Josefin Sans 20px, centré avec un padding top pour que la texte descende un peu pour l'estéthique' */
+.contact {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Les icones dans la div contact avec un margin top de 15px pour avoir un espace entre chaque données*/
+.contact img {
+  margin-top: 15px;
+}
+
+/**************************************/
+/************** COLONNES **************/
+/**************************************/
+
+/* Class pour que les colonnes se 'float' à gauche, et un margin right pour les goutieres en 20px*/
+.col {
+  float: left;
+  margin-right: 20px;
+}
+
+.col-6-12 {
+  /*Colonnes Contact*/
+  width: 465px;
+}
+
+.height-400{
+  height: 400px;
+  }
+
+  .last {
+      margin-right: 0 ! important;
+  }
+
+
+  /**************************************/
+  /************ FORMULAIRE **************/
+  /**************************************/
+
+  /*Class pour le form de la page contact, police Josefin Sans 20px avec bordure coins arrondis et couleur de fond, un padding de 20px pour que le contenu soit bien centré partout, et un margin top pour l'espacé des div.  */
+  .formContact {
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: #D4F2FD;
+      padding: 20px;
+      border-radius: 18px;
+      margin-top: 30px;
+  }
+
+  /*Les div dans le formulaire on un margin top de 20px pour les éloignés les uns des autres. */
+  form div {
+      margin-top: 20px;
+  }
+
+  /*les label en 120px pour qu'ils aient tous la même largeur et en inline block.*/
+
+  label {
+      display: inline-block;
+      width: 120px;
+  }
+
+  /*Textearea en vertical-align top pour que le label remonte pour plus de lisibilité*/
+  textarea {
+      vertical-align: top;
+  }
+
+  /*input et textearea tous de la même largeur 772px qui prend bien le reste de la largeur du form. et font tous les même*/
+  input,
+  textarea {
+      width: 772px;
+      font: 1em sans-serif;
+  }
+
+  /* Class du message de validation de l'envoie du formulaire  */
+  .success-message{
+      width: 350px;
+      margin: 0 auto;
+      background-color: #2de62db7;
+      border: 2px solid #066d06;
+      color: #066d06;
+      border-radius: 25px;
+      text-align: center;
+  }
+
+  /**************************************/
+  /************** BUTTON ****************/
+  /**************************************/
+
+  button {
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #05CDE7;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+/*Bouton formulaire */
+
+/*pour aligner le bouton à droite dans le formulaire */
+
+form .button {
+    text-align: right;
+
+}

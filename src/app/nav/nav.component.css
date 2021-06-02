@@ -1,0 +1,77 @@
+/**************************************/
+/************** GENERAL****************/
+/**************************************/
+
+/*Supprime les margin et padding des éléments cités */
+nav,
+ul,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+/*Class content de 950px de large et centré avec le margin auto*/
+.content {
+  width: 950px;
+  margin: 0 auto;
+}
+/*Pour les liens en général pas de décoration et couleur mauve*/
+a {
+  text-decoration: none;
+  color: #743F83;
+}
+
+/*Presentation, service, réalisations, contact*/
+
+/*Class pour le header des autres pages en full page avec image de fond non répétée, position en haut et margin du bas en 55px pour baisser le contenu*/
+.all {
+  width: 100%;
+  height: 150px;
+  background-image: url(/assets/img/header.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  margin-bottom: 55px;
+  /*border-bottom: 1px solid rgba(238, 74, 108, 0.75);
+  box-shadow: 0px 4px 10px rgba(253, 207, 248, 0.75);*/
+}
+
+/* La navigation des autres pages avec la class all,
+navigation en ligne en police merienda 700 en 25px avec un padding de côté de 57.5px pour qu'elle soit centrée et à distance égale*/
+.all nav ul {
+  list-style-type: none;
+  font-family: 'Merienda', cursive;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+
+}
+
+.all nav ul li {
+  display: inline;
+  padding: 0 57.5px;
+
+}
+
+/* CHangement de couleur au survol des liens de la navigation*/
+.all nav ul li a:hover {
+  color: #EE4A6C;
+}
+
+/*Changement de couleur sur le lien qui correspond à la page sur correspond*/
+.active {
+  color: #EE4A6C;
+}
+
+/**************************************/
+/************** TITRES ****************/
+/**************************************/
+
+/*Class du titre logo*/
+.logo {
+  font-family: 'Merienda', cursive;
+  font-size: 35px;
+  color: #743F83;
+  letter-spacing: -0.03em;
+  text-align: center;
+  padding: 20px 0;
+}

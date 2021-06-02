@@ -1,0 +1,32 @@
+
+<body class="index">
+  <!--Header qui prend toute la surface de la page avec un id-->
+  <header id="header">
+      <!-- div class content pour limiter le contenu à 950px centré à la page-->
+      <div class="content">
+          <!-- Titre Logo qui sera le même sur toute les pages  -->
+          <h1 class="logo">Julène Delvaux</h1>
+          <!--Navigation niveau 1 avec 4 liens avec animation-->
+          <nav>
+              <!-- Ouverture d'une liste sans ordre-->
+              <ul>
+                  <!-- Boucle ngFor pour rechercher le tableau du service Page-->
+                  <li *ngFor= "let pages of page">
+                    <!-- On a un lien le chemin est la valeur de nameRoute de la variable pages -->
+                    <a routerLink={{pages.nameRoute}} routerLinkActive="active">
+                          <!--Div qui contient le texte et qui sera en forme rond, la class est la valeur de className de la variable pages-->
+                          <div class="{{pages.className}} shadowLink">
+                              <!--Div ou la class est une valeur de classText de la variables pages et comprend du texte qui est la valeur de name de la variable pages-->
+                              <div class={{pages.classText}}>{{pages.name}}</div>
+                          </div>
+                      </a></li>
+<!-- Fermeture de la liste sans ordre-->
+              </ul>
+<!-- Fermeture de la navigation-->
+          </nav>
+<!-- Fermeture du la div-->
+      </div>
+<!--  Fermeture du header-->
+  </header>
+<!--Fermeture du body-->
+</body>

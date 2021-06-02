@@ -1,0 +1,92 @@
+/**************************************/
+/************** GENERAL****************/
+/**************************************/
+
+/*Class content de 950px de large et centré avec le margin auto*/
+.content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/*Class pour augmenter la hauteur du div des pages service et production afin de ne pas avoir le footer en milieu de page car pas assez de contenu */
+.size {
+  height: 400px;
+}
+
+/*Pour les liens en général pas de décoration et couleur mauve*/
+a {
+  text-decoration: none;
+  color: #743F83;
+}
+
+/*Supprime le float*/
+.clear {
+  clear: both;
+}
+
+/**************************************/
+/************** TITRES ****************/
+/**************************************/
+
+/*Tout les titres niveau 2 sont en merienda 30px avec un letter-spacing pour l'estétique*/
+h2 {
+  font-family: 'Merienda', cursive;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+}
+
+
+/*Tous les titres niveau 3 sont en merienda 20px sans margin du haut*/
+h3 {
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+
+}
+
+/**************************************/
+/********* ANIMATION SURVOLE **********/
+/**************************************/
+
+/*Réalisation*/
+/*Au survol des div, changement de couleur de fond*/
+.col-2-12:hover {
+  background-color: #FDCFF8;
+}
+
+/**************************************/
+/************** CONTENUS***************/
+/**************************************/
+
+/*pour la texte de la div class col-2-12, padding 10px pour centré le texte dans la div, sans marge, texte centrée en Josefin Sans 18px, et couleur en noir car si non le texte prend les propriétés des liens.*/
+.col-2-12 p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+
+/**************************************/
+/************** COLONNES **************/
+/**************************************/
+
+/* Class pour que les colonnes se 'float' à gauche, et un margin right pour les goutieres en 20px*/
+.col {
+  float: left;
+  margin-right: 20px;
+}
+
+.col-2-12 {
+  /*    Colonnes réalisations avec border afin d'avoir une visibilté pour chaque cases, et un border radius pour des coins arrondis*/
+      width: 166px;
+      border: 2px solid #EE4A6C;
+      border-radius: 12px;
+  }
+
+  .height-150{
+    height: 150px;
+    }
